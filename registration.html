@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <p>REGISTRATION FORM</p>
+    </header>
+
+    <div class="container">
+        <form action="display.php" method="POST">
+            <div class="form">
+                <table>
+                    <tr>
+                        <th>NAME:</th>
+                        <th><input type="text" name="name" placeholder="Enter your name" required></th>
+                    </tr>
+                    <tr>
+                        <th>USN:</th>
+                        <th><input type="text" name="usn" placeholder="Enter your USN" required></th>
+                    </tr>
+                    <tr>
+                        <th>DOB:</th>
+                        <th><input type="date" name="dob" required></th>
+                    </tr>
+                    <tr>
+                        <th rowspan="8">BRANCH:</th>
+                        <th><input type="radio" name="branch" value="CSE" required>CSE</th>
+                    </tr>
+                    <tr>
+                        <th><input type="radio" name="branch" value="ISE">ISE</th>
+                    </tr>
+                    <tr>
+                        <th><input type="radio" name="branch" value="ECE">ECE</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="radio" name="branch" value="ETE">ETE</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="radio" name="branch" value="EEE">EEE</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="radio" name="branch" value="AIML">AIML</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="radio" name="branch" value="CIVIL">CIVIL</th>
+                    </tr> 
+                    <tr>
+                        <th><input type="radio" name="branch" value="MECH">MECH</th>
+                    </tr>
+                    <tr>
+                        <th>SEM:</th>
+                        <th>
+                            <input type="radio" name="sem" value="3rd" required>3rd<br>
+                            <input type="radio" name="sem" value="5th">5th<br>
+                            <input type="radio" name="sem" value="7th">7th
+                        </th>
+                    </tr>  
+                    <tr>
+                        <th>Phone No:</th>
+                        <th><input type="text" name="phone" placeholder="Enter your phone no" required></th>
+                    </tr>
+                    <tr>
+                        <th>E-MAIL:</th>
+                        <th><input type="email" name="email" placeholder="Enter your email" required></th>
+                    </tr>
+                </table>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
